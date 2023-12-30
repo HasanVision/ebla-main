@@ -1,0 +1,73 @@
+
+
+
+.desktopSidebariMain {
+    display: none;
+    justify-content: space-between;
+  }
+  
+  @media (min-width: 1024px) {
+    .desktopSidebariMain { 
+        display: flex; 
+      overflow-y: auto; 
+      position: fixed; 
+      top: 0;
+      bottom: 0; 
+      left: 0; 
+      z-index: 40; 
+      padding-bottom: 1rem; 
+      flex-direction: column; 
+      width: 5rem; 
+      /* background-color: #ffffff;  */
+     
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .desktopSidebariMain {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  
+
+.desktopSidebarNav{
+    display: flex; 
+margin-top: 1rem; 
+flex-direction: column; 
+justify-content: space-between; 
+}
+
+.desktopSidebarUl {
+    display: flex;
+    margin-top: 0.25rem;
+    flex-direction: column;
+    align-items: center;
+   list-style: none; 
+  }
+/*  
+  .space-y-1 > * + * {
+    margin-top: 0.25rem;
+  }
+   */
+
+.avatarDesktop{
+    display: flex; 
+    margin-top: 1rem; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+
+}
+
+.openAvatar {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms; 
+  cursor: pointer; 
+  
+  }
+   
+  .openAvatar:hover {
+    opacity: 0.75;
+  } 

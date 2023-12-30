@@ -1,0 +1,30 @@
+.GroupChatImage{
+    display: inline-block; 
+overflow: hidden; 
+position: absolute; 
+border-radius: 9999px; 
+height: 21px;
+width: 21px;
+
+
+}
+/* avatarGroup.module.css */
+
+/* Position styles for the avatar positions */
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 12px;
+  }
+  
+  .bottom {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  

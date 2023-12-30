@@ -1,0 +1,63 @@
+.ConversationForm{
+    display: flex; 
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    gap: 0.5rem; 
+    align-items: center; 
+    border-top-width: 1px; 
+    width: 100%; 
+   /*  background-color: #ffffff;  */
+}
+
+@media (min-width: 1024px) { 
+    .ConversationForm{
+       gap: 1rem;  
+    }
+    
+   }
+
+
+
+.hiPhotoIcon{
+    color: skyblue;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.ConversationFormSubmit{
+    display: flex; 
+gap: 0.5rem; 
+align-items: center; 
+width: 100%; 
+
+
+
+}
+
+
+
+@media (min-width: 1024px) {
+    .ConversationFormSubmit{ 
+    gap: 1rem; 
+   }
+} 
+  
+
+.messageInputButton{
+    padding: 0.5rem; 
+border-radius: 9999px; 
+transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 300ms; 
+cursor: pointer; 
+border: none;
+
+
+}
+.messageInputButton:hover {
+    background-color: skyblue;
+  }
+
+ 

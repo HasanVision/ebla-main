@@ -1,0 +1,13 @@
+ .sidebarMain {
+  height: 100%;
+  
+  
+}
+
+@media (min-width: 1024px) {
+  .sidebarMain {
+    height: 100vh;
+    padding-left: 5rem;
+  }
+}
+ 

@@ -1,0 +1,17 @@
+.authForm{
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+   
+
+}
+.form{
+   
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    
+}

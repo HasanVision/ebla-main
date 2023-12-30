@@ -1,0 +1,26 @@
+.select {
+    z-index: 100;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* border-gray-900/10 in Tailwind CSS */
+    padding-bottom: 12px; /* pb-12 in Tailwind CSS */
+    /* Add any other styles you want for the GroupChatDiv2 class */
+    
+  }
+  .selectLabel{
+    display: block; 
+font-size: 0.875rem;
+line-height: 1.25rem; 
+font-weight: 500; 
+line-height: 1.5rem; 
+color: #111827; 
+
+
+  }
+
+  .selectSelctor{
+    margin-top: 0.5rem; 
+
+  }
+
+  .TextSize{
+    font-size: 0.875;
+  }

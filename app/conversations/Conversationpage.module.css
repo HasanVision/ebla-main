@@ -1,0 +1,14 @@
+
+.conversationMain {
+  display: none;
+  height: 100%; 
+
+}
+
+@media (min-width: 1024px) {
+  .conversationMain {
+    display: block;
+  padding-left: 20rem;
+  
+  }
+}

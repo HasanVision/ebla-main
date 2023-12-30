@@ -1,0 +1,61 @@
+ .desktopItemLink {
+    display: flex; 
+    padding: 0.75rem; 
+    column-gap: 0.75rem; 
+    border-radius: 0.75rem; 
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    font-weight: 600; 
+    line-height: 1.5rem; 
+    color: #6B7280; 
+    margin-top: 0.313rem;
+
+  }
+  
+  .desktopItemLink:hover {
+    background-color: rgb(106, 153,85);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms; 
+    color: #000000;
+  }
+  
+  .active {
+    background-color: rgb(106, 153,85);
+    color: #000000;
+  }
+
+  
+
+    
+    .chatIcon{
+        height:1.5rem ;
+        width: 1.5rem;
+        flex-shrink: 0;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+   
+    .iconSpan{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden; 
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0; 
+    
+    }
+
+     

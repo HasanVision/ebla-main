@@ -1,0 +1,88 @@
+.headerConversation {
+display: flex; 
+padding-top: 0.75rem;
+padding-bottom: 0.75rem; 
+padding-left: 1rem;
+padding-right: 1rem; 
+justify-content: space-between; 
+align-items: center; 
+width: 100%; 
+/* background-color: #ffffff;  */
+box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); 
+
+}
+
+@media (min-width: 640px) {
+  .headerConversation {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .headerConversation {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.headerConversation2 {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.headerConversationName{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerConversationLastname{
+  margin-left: 8px;
+}
+
+.headerConversationLink {
+  display: block; 
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms; 
+  cursor: pointer; 
+  
+}
+@media (min-width: 1024px) {
+  .headerConversationLink {
+    display: none;
+  }
+}
+
+
+.headerConversationLink:hover {
+  color: #3b82f6;
+}
+
+
+
+.headerConversation3{
+  display: flex;
+  flex-direction: column;
+}
+
+.activeStatus{
+font-size: 0.875rem;
+line-height: 1.25rem; 
+font-weight: 300; 
+
+
+}
+
+
+.horisontalIcon{
+transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 300ms; 
+cursor: pointer; 
+color: red;
+} 
+.horisontalIcon:hover {
+  color: #3b82f6;
+}

@@ -1,0 +1,94 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id               String             @id @default(uuid())
+  email            String             @unique
+  emailVerified    String?
+  hashedPassword   String
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @default(now())
+  firstname        String
+  lastname         String
+  image            String?
+  conversations    Conversation[]     @relation("UserConversations")
+  accounts         Account[]
+  sentMessages     Message[]          @relation("SentMessages")
+  MessageRecipient MessageRecipient[]
+  Message          Message?           @relation(fields: [messageId], references: [id])
+  messageId        String?
+  uploadFile       ProfileImage[]
+}
+
+model Account {
+  id                String    @id @default(uuid())
+  userId            String    @unique
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        DateTime?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  user              User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Conversation {
+  id            String    @id @default(uuid())
+  lastMessageAt DateTime? @default(now())
+  name          String?
+  isGroup       Boolean?  @default(false)
+  createdAt     DateTime  @default(now())
+  users         User[]    @relation("UserConversations")
+  messages      Message[] @relation("ConversationMessages")
+}
+
+model Message {
+  id             String   @id @default(uuid())
+  body           String?
+  image          String?
+  sentAt         DateTime @default(now())
+  senderId       String
+  createdAt      DateTime @default(now())
+  conversationId String
+  seen           User[]
+
+  sender           User               @relation("SentMessages", fields: [senderId], references: [id])
+  conversation     Conversation       @relation("ConversationMessages", fields: [conversationId], references: [id], onDelete: Cascade)
+  MessageRecipient MessageRecipient[]
+}
+
+model MessageRecipient {
+  id          String    @id @default(uuid())
+  messageId   String
+  recipientId String
+  seenAt      DateTime?
+
+  message   Message @relation(fields: [messageId], references: [id])
+  recipient User    @relation(fields: [recipientId], references: [id])
+
+  @@index([messageId])
+  @@index([messageId, recipientId], name: "message_recipient_unique")
+}
+
+model ProfileImage {
+  id        String   @id @default(uuid())
+  filename  String
+  mimeType  String
+  localUrl  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id])
+  userId    String
+}

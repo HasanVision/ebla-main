@@ -1,0 +1,48 @@
+  .userListMain {
+  display: block; 
+  overflow-y: auto; 
+  position: fixed; 
+  top: 0;
+  bottom: 0; 
+  left: 0; 
+  padding-bottom: 5rem; 
+  border-right-width: 1px; 
+  border-color: #E5E7EB; 
+  width: 100%; 
+  }
+   
+  @media (min-width: 1024px) {
+    .userListMain {
+      display: block; 
+      left: 5rem; 
+      padding-bottom: 0; 
+      width: 20rem; 
+    }
+  }
+ /*  @media (min-width: 1280px) {
+    .userListMain {
+      display: block; 
+      left: 7rem; 
+      padding-bottom: 0; 
+      width: 20rem; 
+    }
+  } */
+
+.userListMain2{
+    padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* .userList3{
+    display: flex;
+    flex-direction: column;
+
+} */
+
+.userList4{
+  padding-top: 1rem;
+padding-bottom: 1rem; 
+font-size: 1.5rem;
+line-height: 2rem; 
+font-weight: 700; 
+}  

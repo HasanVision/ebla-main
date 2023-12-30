@@ -1,0 +1,36 @@
+ .conversation {
+ 
+  height: 100%; 
+  
+  }
+  @media (min-width: 1024px) {
+  .conversation { 
+    padding-left: 20rem; 
+   }
+  }
+  
+
+  
+  .conversation2{
+    display: flex;
+flex-direction: column; 
+height: 100%; 
+  } 
+  
+
+  .conversation3 {
+    height: 100%; 
+    
+    }
+    @media (min-width: 1024px) {
+    .conversation3 { 
+      padding-left: 20rem; 
+     }
+    }
+    
+    .conversation4{
+      display: flex; 
+  flex-direction: column; 
+  height: 100%; 
+    } 
+  

@@ -1,0 +1,72 @@
+ .UserBox1 {
+  display: flex; 
+  position: relative; 
+  padding: 0.875rem; 
+  margin-left: 0.5rem; 
+  align-items: center; 
+  border-radius: 0.5rem; 
+/*   width: 100%;  */
+  background-color: #272829; 
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms; 
+  cursor: pointer; 
+  padding-top: 0.313rem;
+  margin-top: 0.826rem;
+  font-weight: 500;
+
+  }
+
+  
+.UserBox1:hover {
+  background-color:rgb(106, 153,85);
+  color: black;
+  font-weight: 600;
+}
+ 
+
+
+
+  .userBox2 {
+    flex: 1 1 0%;
+    min-width: 0;
+    margin-left: 15px;
+  }
+
+  .userBox3:focus {
+    outline: none;
+  }
+  
+  .userBoxSpan{
+    position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  }
+
+  .userBoxLastname{
+    align-items: center;
+   /*  justify-content: left; */
+   margin-left: 10px;
+   /* color: red; */
+  } 
+
+
+ 
+  .userBox4 {
+    display: flex;
+ /*  justify-content: space-between; */
+  align-items: center;
+ /*  margin-bottom: 1rem; */
+  }
+
+  
+  .userBoxFirstname {
+    /* font-size: 0.875rem; */
+    /* line-height: 1.25rem;  */
+    font-weight: 500; 
+    
+  }
+ 

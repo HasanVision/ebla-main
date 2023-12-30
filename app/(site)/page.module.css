@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
+  }
+
+  .sign{
+    font-weight: 300;
+    margin-top: 50px;
+  }
+  .regfrom{
+    margin-top: 50px;
+  }
